@@ -1,0 +1,15 @@
+.button_1 {
+	width: 15.8rem;
+	height: 4rem;
+	text-transform: capitalize;
+	font-size: var(--fs-200);
+	letter-spacing: 2px;
+	font-weight: 700;
+	background-color: #000;
+	transition: var(--transition);
+}
+
+.button_1:hover {
+	color: #000;
+	background-color: var(--clr-grey-400);
+}

@@ -1,0 +1,40 @@
+.home {
+	display: grid;
+	grid-template-columns: [full-start] minmax(14rem, auto) [col-start] repeat(12, minmax(6.5rem, 12rem)) minmax(14rem, auto) [full-end];
+	grid-column-gap: 3rem;
+	grid-template-rows: max-content;
+}
+
+.section_invite {
+	grid-column: full-start / full-end;
+	height: 65rem;
+	background-color: red;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: minmax(61rem, auto) minmax(83rem, auto);
+}
+
+.section_invite_bg_image {
+	background-image: url("../../assets/img/home/desktop/create-and-share.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.section_invite_context {
+	background-color: black;
+	height: 100%;
+}
+.invite_title {
+	color: #fff;
+	width: 38.7rem;
+	margin: 17.3rem 19% 2.1rem 19%;
+}
+
+.invite_text {
+	color: var(--clr-grey-400);
+	width: 38.7rem;
+	margin: 0 19% 0 19%;
+	line-height: 25px;
+}
+.btn_wrapper {
+	margin: 4.8rem 19% 0 19%;
+}

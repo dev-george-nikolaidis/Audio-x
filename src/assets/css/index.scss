@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
 html {
 	font-size: 62.5%;
@@ -6,40 +6,26 @@ html {
 
 :root {
 	/* Colors */
-	--clr-red-1: #fc4747;
+	--clr-red-400: #fc4747;
 
-	--clr-dark-blue-1: #10141e;
-	--clr-dark-blue-2: #161d2f;
+	--clr-black-400: #000000;
+	--clr-grey-400: #dfdfdf;
+	--clr-white-400: #dfdfdf;
 
-	--clr-grey-1: #5a698f;
-	--clr-white-1: #fff;
-
-	--clr-search-text: #fff;
-	--clr-search-line: #5a698f;
-	--clr-body-bg: #10141e;
-	--clr-body-text: #fff;
-	--clr-nav-bg: #161d2f;
-	--clr-nav-icon: #5a698f;
-	--clr-nav-hover: #fc4747;
-	--clr-nav-icon-active: #fff;
-
-	--clr-bookmark: #979797;
-	--clr-bookmark-hover: #979797;
-	--clr-bookmark-bg-hover: #fff;
-
-	--clr-sub-title: rgba(255, 255, 255, 0.75);
-	--clr-btn-act: #fc4747;
 	// --fs-900: 20rem;
-	--fs-800: 3.2rem;
-	--fs-700: 2.4rem;
+	--fs-800: 4rem;
+	// --fs-700: 4rem;
 	// --fs-600: 2.4rem;
 	--fs-500: 1.8rem;
 	--fs-400: 1.5rem;
-	--fs-300: 1.3rem;
-	// --fs-200: 1.5rem;
+	--fs-300: 1.4rem;
+	--fs-200: 1.2rem;
+	--fs-100: 1.1rem;
 
-	--box-shadow-1: 0 3px 8px rgba(0, 0, 0, 0.1);
-	--ff-normal: "Outfit", sans-serif;
+	// --fs-200: 1.5rem;
+	--transition: all 0.5s ease-in-out;
+	--box-shadow-400: 0 3px 8px rgba(0, 0, 0, 0.1);
+	--ff-normal: "DM Sans", sans-serif;
 }
 
 /*****************         Resets             **************************/
@@ -55,10 +41,8 @@ body {
 	font-family: var(--ff-normal);
 	font-size: var(--fs-400);
 	min-height: 100vh;
-	background-color: var(--clr-body-bg);
 	text-rendering: optimizeSpeed;
 	line-height: 1.5;
-	color: var(--clr-body-text);
 }
 
 // This is for react root div element
@@ -157,6 +141,13 @@ select {
 /*****************        Typography            **************************/
 
 /*****************      Components            **************************/
+.header_h1 {
+	font-size: var(--fs-800);
+	font-weight: 700;
+	line-height: 48px;
+	letter-spacing: 4.17px;
+	text-transform: uppercase;
+}
 
 /*****************      Media queries            **************************/
 

@@ -1,134 +1,42 @@
-.nav_wrapper {
-	width: 9.6rem;
-	height: 96rem;
-	flex-shrink: 0;
-	border-radius: 2rem;
-	background-color: var(--clr-nav-bg);
-	margin-left: 2%;
-}
-
 .navigation {
-	height: 100%;
+	grid-column: 2 / 14;
+	height: 7.2rem;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 }
 
-.logo {
-	margin: 3.2rem 0 7.5rem 0;
+.list {
+	display: flex;
+	gap: 3.7rem;
 }
 
-.icon {
-	width: 2.5rem;
-	height: 2.5rem;
-	margin-bottom: 3rem;
+.span_text {
+	color: var(--clr-black-400);
+	font-size: var(--fs-200);
+	letter-spacing: 2px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
-.inactive {
-	color: var(--clr-nav-icon);
-}
-
-.active {
-	color: var(--clr-nav-icon-active);
-}
-
-.avatar_container {
-	margin-top: auto;
-	width: 4rem;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	margin-bottom: 3.2rem;
-}
-
-.user_links {
-	margin-top: auto;
-}
-
-li {
-	transition: all 0.5s ease-in-out;
-}
-
-li:hover {
-	.icon {
-		color: var(--clr-nav-hover);
-	}
-}
-.avatar {
+.link_cta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	color: #fff;
+	height: 4rem;
+	background-color: #000;
+	font-size: var(--fs-200);
+	letter-spacing: 2px;
+	font-weight: 700;
+	width: 15.8rem;
 }
 
 // / 760px 1024px
 @media (max-width: 64em) {
-	.nav_wrapper {
-		width: 96%;
-		height: 7rem;
-		margin: 0 auto;
-		position: relative;
-	}
-
-	.navigation {
-		// height: 100%;
-		width: 100%;
-		flex-direction: row;
-
-		justify-content: center;
-		align-items: center;
-	}
-
-	.list {
-		display: flex;
-		padding: unset;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-	}
-
-	.logo_wrapper {
-		position: absolute;
-		left: 5%;
-	}
-	.logo {
-		margin: 0;
-	}
-
-	.icon {
-		margin: unset;
-		margin-right: 3rem;
-	}
-
-	.avatar_container {
-		margin: unset;
-		display: block;
-		position: absolute;
-		right: 5%;
-	}
-
-	.user_links {
-		margin-top: 0;
-		display: flex;
-		position: absolute;
-		right: 0;
-	}
 }
 
 // 375 -480px
 @media (max-width: 30em) {
-	.nav_wrapper {
-		width: 100%;
-		border-radius: 0;
-		height: 5.5rem;
-	}
-
-	.logo {
-		width: 2.5rem;
-		height: 2rem;
-	}
-
-	.icon {
-		width: 2rem;
-		height: 2rem;
-		margin-right: 2.2rem;
-	}
-	.avatar_container {
-		width: 3rem;
-	}
 }

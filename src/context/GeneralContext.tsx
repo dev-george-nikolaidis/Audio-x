@@ -1,5 +1,4 @@
 import React, { createContext, Dispatch, ReactNode, useContext, useReducer } from "react";
-import { MovieProps } from "../utils/types";
 
 import { Action, Genres } from "./Actions";
 import { reducer } from "./GeneralReducer";
