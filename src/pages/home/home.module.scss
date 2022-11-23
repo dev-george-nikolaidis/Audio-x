@@ -8,7 +8,6 @@
 .section_invite {
 	grid-column: full-start / full-end;
 	height: 65rem;
-	background-color: red;
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: minmax(61rem, auto) minmax(83rem, auto);
@@ -37,4 +36,149 @@
 }
 .btn_wrapper {
 	margin: 4.8rem 19% 0 19%;
+}
+
+.section_stories {
+	grid-column: full-start / full-end;
+	height: 60rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: minmax(83rem, auto) minmax(61rem, auto);
+}
+
+.section_stories_bg_image {
+	background-image: url("../../assets/img/home/desktop/beautiful-stories.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.section_stories_context {
+}
+
+.stories_title {
+	margin: 13.6rem 19% 2.1rem 19%;
+}
+
+.stories_text {
+	width: 38.7rem;
+	margin: 0 19% 0 19%;
+	line-height: 25px;
+}
+
+.section_designed {
+	grid-column: full-start / full-end;
+	height: 60rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: minmax(61rem, auto) minmax(83rem, auto);
+}
+
+.section_designed_context {
+}
+
+.section_designed_bg_image {
+	background-image: url("../../assets/img/home/desktop/designed-for-everyone.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.designed_title {
+	width: 38.7rem;
+	margin: 16rem 19% 2.1rem 19%;
+}
+
+.section_gallery {
+	display: grid;
+	grid-column: full-start / full-end;
+	grid-auto-flow: column;
+
+	// grid-template-columns: repeat(4, minmax(36rem, 1fr));
+	// grid-template-columns: repeat(4, repeat(auto-fill, minmax(36rem, 1fr)));
+}
+
+.section_features {
+	margin-top: 12rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-column: full-start / full-end;
+}
+
+.feature_wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	margin-bottom: 12rem;
+}
+
+// / 760px 1024px
+@media (max-width: 64em) {
+	.home {
+		grid-template-columns: [full-start] minmax(3.9rem, auto) [col-start] repeat(12, minmax(4.8rem, 12rem)) minmax(3.9rem, auto) [full-end];
+		grid-column-gap: 1rem;
+	}
+
+	.section_invite {
+		grid-template-columns: minmax(48rem, auto) minmax(25rem, auto);
+	}
+
+	.invite_title {
+		margin: 17.3rem 10% 2.1rem 10%;
+	}
+
+	.invite_text {
+		margin: 0 10% 0 10%;
+	}
+
+	.btn_wrapper {
+		margin: 4.8rem 10% 0 10%;
+	}
+
+	.section_invite_bg_image {
+		background-image: url("../../assets/img/home/tablet/create-and-share.jpg");
+	}
+
+	.section_stories {
+		grid-template-columns: minmax(27rem, auto) minmax(49.9rem, auto);
+	}
+
+	.section_stories_bg_image {
+		background-image: url("../../assets/img/home/tablet/beautiful-stories.jpg");
+	}
+
+	.stories_title {
+		margin: 13.6rem 10% 2.1rem 10%;
+	}
+
+	.stories_text {
+		width: 38.7rem;
+		margin: 0 10% 0 10%;
+		line-height: 25px;
+	}
+
+	.section_designed {
+		grid-template-columns: minmax(49.5rem, auto) minmax(27rem, auto);
+	}
+
+	.designed_title {
+		margin: 16rem 10% 2.1rem 10%;
+	}
+
+	.section_designed_bg_image {
+		background-image: url("../../assets/img/home/tablet/designed-for-everyone.jpg");
+	}
+
+	.section_gallery {
+		// display: grid;
+		// grid-column: full-start / full-end;
+		// grid-auto-flow: column;
+		// grid-template-columns: 1fr 1fr;
+	}
+
+	.section_features {
+		justify-items: center;
+	}
+
+	.feature_wrapper {
+		flex-direction: column;
+	}
 }

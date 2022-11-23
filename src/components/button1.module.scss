@@ -7,9 +7,10 @@
 	font-weight: 700;
 	background-color: #000;
 	transition: var(--transition);
+	transition: var(--transition);
+	cursor: pointer;
 }
 
 .button_1:hover {
-	color: #000;
-	background-color: var(--clr-grey-400);
+	text-decoration: underline;
 }

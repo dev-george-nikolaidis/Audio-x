@@ -17,6 +17,12 @@
 	letter-spacing: 2px;
 	font-weight: 700;
 	text-transform: uppercase;
+	transition: var(--transition);
+}
+
+.span_text:hover {
+	color: var(--clr-gray-400);
+	color: grey;
 }
 
 .link_cta {
@@ -31,6 +37,12 @@
 	letter-spacing: 2px;
 	font-weight: 700;
 	width: 15.8rem;
+	transition: var(--transition);
+}
+
+.link_cta:hover {
+	color: #000;
+	background-color: var(--clr-grey-400);
 }
 
 // / 760px 1024px

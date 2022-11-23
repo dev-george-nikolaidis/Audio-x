@@ -3,7 +3,6 @@ import Logo from "../assets/img/shared/desktop/logo.svg";
 
 // Libraries
 import { NavLink } from "react-router-dom";
-import { MdViewList, MdLocalMovies, MdLiveTv, MdBookmark, MdPersonAddAlt1, MdLogin, MdFilterListAlt } from "react-icons/md";
 import { useGeneralContext } from "../context/GeneralContext";
 
 const Navigation: React.FC = () => {

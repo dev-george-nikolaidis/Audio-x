@@ -1,10 +1,17 @@
-.button_4 {
+.button_2 {
 	display: flex;
+	transition: var(--transition);
+	cursor: pointer;
 }
 
+.button_2:hover {
+	.btn_text {
+		text-decoration: underline;
+	}
+}
 .btn_text {
 	font-size: var(--fs-200);
-	color: #fff;
+	color: #000;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
