@@ -1,5 +1,5 @@
 .feature {
-	width: 35rem;
+	width: 31rem;
 	text-align: center;
 }
 
@@ -19,4 +19,12 @@
 }
 
 .feature_text {
+}
+
+// 375 -480px
+@media (max-width: 30em) {
+	.feature {
+		width: 31rem;
+		text-align: center;
+	}
 }

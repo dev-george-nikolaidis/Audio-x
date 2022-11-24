@@ -2,6 +2,7 @@
 	grid-column: full-start / full-end;
 	height: 25rem;
 	background-color: #000;
+	position: relative;
 }
 
 .footer_wrapper {
@@ -66,9 +67,24 @@
 	}
 
 	.links_container {
-		margin-top: 6.4rem;
-		grid-column: 5/5;
 		display: flex;
+		gap: 2.6rem;
 		flex-direction: row;
+		position: absolute;
+		left: 6%;
+		top: 20%;
+	}
+	.logos_container {
+		margin-top: 10rem;
+	}
+
+	.copy_container {
+		grid-column: 9/ 14;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.copy_text {
+		margin-top: 10.2rem;
 	}
 }

@@ -171,11 +171,19 @@ select {
 	:root {
 		// Smartphone
 		// --fs-900-s: 10rem;
-		--fs-800-s: 2rem;
+		--fs-800-s: 3.2rem;
 		--fs-700-s: 1.5rem;
 		--fs-600-s: 1.4rem;
 		--fs-400-s: 1.2rem;
 		// --fs-200-s: 1rem;
+	}
+
+	.header_h1 {
+		font-size: var(--fs-800-s);
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: 3.3px;
+		text-transform: uppercase;
 	}
 }
 
