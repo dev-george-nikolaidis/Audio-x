@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button2 from "../../components/Button2";
 import Button4 from "../../components/Button4";
 import Feature from "../../components/Feature";
@@ -32,9 +33,9 @@ const Home: React.FC = () => {
 						<p className={styles.stories_text}>
 							We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.
 						</p>
-						<div className={styles.btn_wrapper_stories}>
+						<Link to="/stories" className={styles.btn_wrapper_stories}>
 							<Button2 text="View the stories" />
-						</div>
+						</Link>
 					</div>
 				</section>
 
@@ -44,9 +45,9 @@ const Home: React.FC = () => {
 						<p className={styles.stories_text}>
 							Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.{" "}
 						</p>
-						<div className={styles.btn_wrapper_designed}>
+						<Link to="/stories" className={styles.btn_wrapper_designed}>
 							<Button2 text="View the stories" />
-						</div>
+						</Link>
 					</div>
 					<div className={styles.section_designed_bg_image}></div>
 				</section>

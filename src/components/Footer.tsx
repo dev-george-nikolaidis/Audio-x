@@ -14,7 +14,9 @@ const Footer: React.FC = () => {
 		<footer className={styles.footer}>
 			<div className={styles.footer_wrapper}>
 				<div className={styles.logo_socials}>
-					<Logo color="#fff" />
+					<div className={styles.logo_container}>
+						<Logo color="#fff" />
+					</div>
 					<div className={styles.logos_container}>
 						<img src={Facebook_icon} alt="" />
 						<img src={Youtube_icon} alt="" />

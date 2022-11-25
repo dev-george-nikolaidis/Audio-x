@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // local
 import "./assets/css/index.scss";
 import Home from "./pages/home/Home";
+import Stories from "./pages/stories/Stories";
 
 const Router: React.FC = () => {
 	return (
@@ -19,6 +20,7 @@ const Router: React.FC = () => {
 					<Route path="/media/bookmarked" element={<Bookmarked />} />
 					<Route path="*" element={<div>Error</div>} /> */}
 					<Route path="/" element={<Home />} />
+					<Route path="/stories" element={<Stories />} />
 					<Route path="*" element={<div>Error</div>} />
 				</Routes>
 			</BrowserRouter>
