@@ -3,12 +3,13 @@ import Navigation from "../../components/Navigation";
 import styles from "./stories.module.scss";
 import { gallery_data } from "../../data/data";
 import SingleCard from "../../components/SingleCard";
+import Footer from "../../components/Footer";
 
 const Stories: React.FC = () => {
 	let display_gallery = gallery_data.map((card: any) => {
 		const { image_name, time, title, author } = card;
 
-		return <SingleCard author={author} large_image_name={image_name} title={title} />;
+		return <SingleCard author={author} large_image_name={image_name} title={title} key={title} time={time} />;
 	});
 
 	return (
@@ -33,11 +34,8 @@ const Stories: React.FC = () => {
 				</div>
 			</section>
 
-			<section className={styles.section_gallery}>
-				{/* <div className={styles.gallery_wrapper}> */}
-				{display_gallery}
-				{/* </div> */}
-			</section>
+			<section className={styles.section_gallery}>{display_gallery}</section>
+			<Footer />
 		</div>
 	);
 };

@@ -54,7 +54,7 @@ const Home: React.FC = () => {
 
 				<section className={styles.section_gallery}>
 					<SingleCard large_image_name="mountains.jpg" title="The Mountains" author="by John Appleseed" />
-					<SingleCard large_image_name="cityscapes.jpg" title="Sunset Cityscapes" author="by Benjamin Cruz" />
+					<SingleCard large_image_name="milky-way.jpg" title="March 5th 2020" author="by Benjamin Cruz" />
 					<SingleCard large_image_name="18-days-voyage.jpg" title="18 Days Voyage" author="by Alexei Borodin" />
 					<SingleCard large_image_name="architecturals.jpg" title="Architecturals" author="by Samantha Brooke" />
 				</section>
