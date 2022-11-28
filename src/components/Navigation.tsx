@@ -29,12 +29,12 @@ const Navigation: React.FC = () => {
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/media/movies" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
+					<NavLink to="/features" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
 						<span className={styles.span_text}> Features</span>
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/media/movies/filter" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
+					<NavLink to="/pricing" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
 						<span className={styles.span_text}> Pricing</span>
 					</NavLink>
 				</li>
@@ -68,12 +68,12 @@ const Navigation: React.FC = () => {
 								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/media/movies" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
+								<NavLink to="/features" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
 									<span className={styles.span_text}> Features</span>
 								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/media/movies/filter" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
+								<NavLink to="/pricing" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
 									<span className={styles.span_text}> Pricing</span>
 								</NavLink>
 							</li>

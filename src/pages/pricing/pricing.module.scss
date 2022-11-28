@@ -1,0 +1,76 @@
+.pricing {
+	display: grid;
+	grid-template-columns: [full-start] minmax(14rem, auto) [col-start] repeat(12, minmax(6.5rem, 12rem)) minmax(14rem, auto) [full-end];
+	grid-column-gap: 3rem;
+	grid-template-rows: max-content;
+}
+
+.header {
+	grid-column: full-start / full-end;
+	display: grid;
+	grid-template-columns: minmax(61rem, 1fr) minmax(83rem, 2fr);
+	height: 49rem;
+}
+
+.text_wrapper {
+	color: #fff;
+	margin: 17rem 11rem;
+}
+
+.text_container {
+	background-color: #000;
+}
+
+.bg_image {
+	background-image: url("../../assets/img/pricing/desktop/hero.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.pricing_cards_container {
+	grid-column: full-start / full-end;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.toggle_container {
+	display: flex;
+	align-items: center;
+	gap: 3.2rem;
+}
+
+.toggle_icon {
+	font-size: 4rem;
+	fill: #000;
+}
+
+.cards_container {
+	// background-color: aliceblue;
+	display: grid;
+	width: 111rem;
+	height: 47rem;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.basic_wrapper {
+	padding: 3.2rem 3rem 3.2rem 0;
+}
+
+.basic {
+	background-color: grey;
+	height: 100%;
+}
+
+.pro {
+	background-color: #000;
+}
+
+.business_wrapper {
+	padding: 3.2rem 0 3.2rem 3rem;
+}
+.business {
+	background-color: grey;
+	height: 100%;
+}

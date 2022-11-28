@@ -3,7 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // local
 import "./assets/css/index.scss";
+import Features from "./pages/features/Features";
 import Home from "./pages/home/Home";
+import Pricing from "./pages/pricing/Pricing";
 import Stories from "./pages/stories/Stories";
 
 const Router: React.FC = () => {
@@ -11,14 +13,8 @@ const Router: React.FC = () => {
 		<>
 			<BrowserRouter>
 				<Routes>
-					{/* <Route path="/user/register" element={<Register />} />
-					<Route path="/user/login" element={<Login />} />
-					<Route path="/media/movie/:id" element={<SingleMoviePage />} />
-					<Route path="/person/:id" element={<SinglePersonPage />} />
-					<Route path="/media/movies" element={<Movies />} />
-					<Route path="/media/series" element={<Series />} />
-					<Route path="/media/bookmarked" element={<Bookmarked />} />
-					<Route path="*" element={<div>Error</div>} /> */}
+					<Route path="/pricing" element={<Pricing />} />
+					<Route path="/features" element={<Features />} />
 					<Route path="/" element={<Home />} />
 					<Route path="/stories" element={<Stories />} />
 					<Route path="*" element={<div>Error</div>} />
