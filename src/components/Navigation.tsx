@@ -42,7 +42,7 @@ const Navigation: React.FC = () => {
 
 			<div className={styles.user_links}>
 				<li>
-					<NavLink to="/user/login" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
+					<NavLink to="/" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
 						<span className={styles.link_cta}> Get An invite</span>
 					</NavLink>
 				</li>
@@ -81,7 +81,7 @@ const Navigation: React.FC = () => {
 
 						<div className={styles.modal_line}></div>
 						<div className={styles.btn_modal}>
-							<NavLink to="/user/login" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
+							<NavLink to="/" end className={({ isActive }) => (isActive ? ` ${styles.active}  active` : `${styles.inactive}`)}>
 								<span className={styles.link_cta}> Get An invite</span>
 							</NavLink>
 						</div>

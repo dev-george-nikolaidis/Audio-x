@@ -29,6 +29,7 @@
 		grid-column: full-start / full-end;
 		grid-template-columns: [full-start] minmax(3.9rem, auto) [col-start] repeat(12, minmax(4.8rem, 12rem)) minmax(3.9rem, auto) [full-end];
 		grid-column-gap: 1rem;
+		background-image: url("../assets/img/shared/tablet/bg-beta.jpg");
 	}
 }
 

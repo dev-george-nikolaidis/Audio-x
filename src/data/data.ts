@@ -122,3 +122,57 @@ export const features = [
     },
 
 ]
+
+export const compare_packages = [
+
+    {
+        perk_name: "UNLIMITED STORY POSTING",
+        basic: true,
+        pro: true,
+        business: true,
+    },
+    {
+        perk_name: "UNLIMITED PHOTO UPLOAD",
+        basic: true,
+        pro: true,
+        business: true,
+    },
+    {
+        perk_name: "EMBEDDING CUSTOM CONTENT",
+        basic: false,
+        pro: true,
+        business: true,
+    },
+    {
+        perk_name: "CUSTOMIZE METADATA",
+        basic: false,
+        pro: true,
+        business: true,
+    },
+    {
+        perk_name: "ADVANCED METRICS",
+        basic: false,
+        pro: false,
+        business: true,
+    },
+    {
+        perk_name: "PHOTO DOWNLOADS",
+        basic: false,
+        pro: false,
+        business: true,
+    },
+    {
+        perk_name: "SEARCH ENGINE INDEXING",
+        basic: false,
+        pro: false,
+        business: true,
+    },
+    {
+        perk_name: "CUSTOM ANALYTICS",
+        basic: false,
+        pro: false,
+        business: true,
+    },
+ 
+
+]

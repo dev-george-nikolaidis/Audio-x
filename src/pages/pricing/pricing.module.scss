@@ -33,16 +33,41 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	margin-top: 12rem;
+}
+.text_paragraph {
+	color: gray;
 }
 
 .toggle_container {
 	display: flex;
 	align-items: center;
+
 	gap: 3.2rem;
+	margin-bottom: 4.8rem;
+}
+
+.monthly_text_active {
+	font-weight: 700;
+	font-size: var(--fs-500);
+}
+
+.year_text_active {
+	font-weight: 700;
+	font-size: var(--fs-500);
+}
+
+.year_text {
+	font-size: var(--fs-500);
+}
+
+.monthly_text {
+	font-size: var(--fs-500);
 }
 
 .toggle_icon {
-	font-size: 4rem;
+	display: block;
+	font-size: 4.5rem;
 	fill: #000;
 }
 
@@ -59,18 +84,247 @@
 }
 
 .basic {
-	background-color: grey;
+	background-color: #efeeee;
 	height: 100%;
-}
-
-.pro {
-	background-color: #000;
+	padding: 5.6rem 4rem;
+	text-align: center;
 }
 
 .business_wrapper {
 	padding: 3.2rem 0 3.2rem 3rem;
 }
 .business {
-	background-color: grey;
+	background-color: #efeeee;
+	padding: 5.6rem 4rem;
+	text-align: center;
 	height: 100%;
+}
+
+// General styles for cards
+
+.plan_title {
+	font-size: var(--fs-600);
+	line-height: 25px;
+	font-weight: 700;
+}
+
+.plant_text {
+	width: 27rem;
+	margin: 1.8rem 0 4rem 0;
+}
+
+.plan_monthly_price {
+	font-size: var(--fs-800);
+	font-weight: 700;
+	letter-spacing: 4.17px;
+	line-height: 48px;
+}
+
+.plan_yearly_price {
+	font-size: var(--fs-800);
+	font-weight: 700;
+	letter-spacing: 4.17px;
+	line-height: 48px;
+}
+
+.btn_price {
+	width: 100%;
+	background-color: #000;
+	height: 4rem;
+	border: none;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 4rem;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+// pro
+
+.pro {
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	padding: 8.8rem 4rem;
+}
+
+.plant_text_pro {
+	color: #b0aeae;
+}
+
+.price_sub_text_pro {
+	color: #b0aeae;
+}
+
+.btn_price_pro {
+	width: 100%;
+	background-color: #fff;
+	height: 4rem;
+	border: none;
+	text-align: center;
+	color: #000;
+	text-transform: uppercase;
+	margin-top: 4rem;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+// / 760px 1024px
+@media (max-width: 64em) {
+	.pricing {
+		grid-template-columns: [full-start] minmax(3.9rem, auto) [col-start] repeat(12, minmax(4.8rem, 12rem)) minmax(3.9rem, auto) [full-end];
+		grid-column-gap: 1rem;
+	}
+	.header {
+		grid-column: full-start / full-end;
+		display: grid;
+		grid-template-columns: minmax(49.5rem, 1fr) minmax(27rem, 2fr);
+		height: 49rem;
+	}
+
+	.text_wrapper {
+		margin: 17rem 5.2rem;
+	}
+	.hero_title {
+		margin-bottom: 2.1rem;
+	}
+
+	.bg_image {
+		background-image: url("../../assets/img/pricing/tablet/hero.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	.cards_container {
+		display: flex;
+		gap: 2.4rem;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 4rem;
+		width: 100%;
+		height: 100%;
+	}
+
+	.basic_wrapper {
+		padding: 0;
+	}
+	.basic {
+		position: relative;
+		height: 27rem;
+		width: 100%;
+		text-align: unset;
+		padding: 4rem;
+	}
+
+	.pro {
+		position: relative;
+		color: #fff;
+		height: 27rem;
+		text-align: unset;
+		padding: 4rem;
+	}
+
+	.business_wrapper {
+		padding: 0;
+	}
+	.business {
+		position: relative;
+		height: 27rem;
+		width: 100%;
+		padding: 4rem;
+		text-align: unset;
+	}
+	.plan_title {
+	}
+	.plant_text {
+		width: 27rem;
+		margin: 1.8rem 0 3.2rem 0;
+	}
+
+	.price_container {
+		position: absolute;
+		right: 5%;
+		top: 3rem;
+	}
+
+	.price_sub_text {
+		float: right;
+	}
+
+	.btn_price {
+		margin: 0;
+		width: 27rem;
+	}
+
+	.btn_price_pro {
+		margin: 0;
+		width: 27rem;
+	}
+}
+
+// 375 -480px
+@media (max-width: 30em) {
+	.pricing {
+		grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(12, minmax(2rem, 12rem)) minmax(1rem, auto) [full-end];
+		grid-column-gap: 1rem;
+	}
+
+	.header {
+		grid-column: full-start / full-end;
+		display: grid;
+		flex-direction: column;
+
+		grid-template-areas: "bg_image" "text_container";
+		height: 100%;
+	}
+	.bg_image {
+		background-image: url("../../assets/img/pricing/mobile/hero.jpg");
+		height: 29.4rem;
+		grid-area: bg_image;
+	}
+
+	.text_container {
+		height: 28rem;
+		background-color: #000;
+		grid-area: text_container;
+	}
+
+	.text_wrapper {
+		color: #fff;
+		margin: 9.4rem 2.8rem 5rem 2.8rem;
+	}
+
+	.text_paragraph {
+		width: 31.5rem;
+	}
+
+	.basic {
+		position: relative;
+		height: 40.7rem;
+		text-align: center;
+		padding: 5.6rem 2.2rem;
+	}
+	.pro {
+		position: relative;
+		height: 40.7rem;
+		text-align: center;
+		padding: 5.6rem 2.2rem;
+	}
+	.business {
+		position: relative;
+		height: 40.7rem;
+		text-align: center;
+		padding: 5.6rem 2.2rem;
+	}
+
+	.price_container {
+		position: unset;
+		right: 5%;
+		top: 3rem;
+	}
+	.price_sub_text {
+		float: unset;
+		margin-bottom: 4rem;
+	}
 }
